@@ -5,13 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensaje Especial</title>
     <style>
-        body { text-align: center; font-family: Arial, sans-serif; background-color: white; }
-        img { width: 300px; border-radius: 10px; }
-        h1 { color: red; font-size: 24px; }
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+        video {
+            width: 80%;
+            max-width: 500px;
+            margin-top: 10px;
+        }
+        .phrase {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <img src="LOGO.jpeg" alt="Logo">
-    <h1>FELIZ 6 MESES MI AMORCITO, TE AMO :)</h1>
+
+    <div class="container">
+        <img src="LOGO.jpeg" alt="Logo">
+        <h2>FELIZ 6 MESES MI AMORCITO, TE AMO :)</h2>
+
+        <div>
+            <p class="phrase">Primer video: Un momento especial</p>
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+
+        <div>
+            <p class="phrase">Segundo video: Nuestro mejor recuerdo</p>
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+
+        <div>
+            <p class="phrase">Tercer video: Una sonrisa para siempre</p>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+
+    </div>
+
 </body>
 </html>
