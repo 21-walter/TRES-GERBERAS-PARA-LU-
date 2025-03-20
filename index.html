@@ -8,12 +8,15 @@
         body {
             text-align: center;
             font-family: Arial, sans-serif;
-            background-color: white;
+            background: linear-gradient(to bottom, #a67c52, #d2b48c);
             color: black;
+            position: relative;
         }
         .container {
             width: 80%;
             margin: auto;
+            position: relative;
+            z-index: 2;
         }
         img {
             width: 300px;
@@ -30,9 +33,35 @@
             font-weight: bold;
             margin-top: 10px;
         }
+        .decoracion {
+            position: absolute;
+            width: 200px;
+            opacity: 0.3;
+            z-index: 1;
+        }
+        .decoracion.top-left {
+            top: 0;
+            left: 0;
+        }
+        .decoracion.top-right {
+            top: 0;
+            right: 0;
+        }
+        .decoracion.bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+        .decoracion.bottom-right {
+            bottom: 0;
+            right: 0;
+        }
     </style>
 </head>
 <body>
+    <img src="DECORACION.jpeg" class="decoracion top-left" alt="Decoración">
+    <img src="DECORACION.jpeg" class="decoracion top-right" alt="Decoración">
+    <img src="DECORACION.jpeg" class="decoracion bottom-left" alt="Decoración">
+    <img src="DECORACION.jpeg" class="decoracion bottom-right" alt="Decoración">
 
     <div class="container">
         <img src="LOGO.jpeg" alt="Logo">
@@ -86,7 +115,6 @@
             </video>
         </div>
     </div>
-
 </body>
 </html>
 
